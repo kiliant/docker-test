@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: kiliant/docker-test
+  IMAGE_NAME: kiliant/docker-tex
   REGISTRY: ghcr.io
 
 jobs:
