@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: ghcr.io/kiliant/docker-test/docker-tex
+  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   build:
