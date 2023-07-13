@@ -39,3 +39,10 @@ jobs:
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
+  
+  finally:
+    name: Finally Done
+    needs: build
+    steps:
+      - name: Saying Goodbye
+        run: echo "Thanks. Goodbye."
