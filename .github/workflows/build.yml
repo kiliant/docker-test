@@ -47,3 +47,11 @@ jobs:
     steps:
       - name: Saying Goodbye
         run: echo "Thanks. Goodbye."
+
+  finally2:
+    runs-on: ubuntu-latest
+    name: Finally Done
+    needs: build
+    steps:
+      - name: Saying Goodbye
+        run: echo "Thanks. Goodbye."
