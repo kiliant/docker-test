@@ -41,6 +41,7 @@ jobs:
           cache-to: type=gha,mode=max
   
   finally:
+    runs-on: ubuntu-latest
     name: Finally Done
     needs: build
     steps:
