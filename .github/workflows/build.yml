@@ -6,6 +6,7 @@ on:
       - main
   schedule:
     - cron:  '0 3 * * *'
+  workflow_dispatch:
 
 env:
   IMAGE_NAME: kiliant/docker-tex
